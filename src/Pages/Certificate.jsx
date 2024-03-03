@@ -71,11 +71,18 @@ function Certificate() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="bg-white p-8 shadow-md rounded-lg w-96">
+    <div className="flex items-center justify-center h-screen"
+    style={{
+      backgroundImage: `url('bg.jpeg')`, // Use the correct path to your image
+      backgroundSize: 'cover', // Adjust the background size as needed
+      backgroundPosition: 'center', // Adjust the background position as needed
+      opacity:1
+    }}
+    >
+      <div className="bg-white p-8 shadow-md rounded-lg w-96 md:w-[40vw]">
         <p className="text-center">
           Enter your name, email, and feedback, and click the button to
-          download.
+          download your certificate
         </p>
         <input
           type="text"
